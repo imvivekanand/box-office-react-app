@@ -1,10 +1,13 @@
 import React from 'react';
+import { Switch, Route  } from 'react-router';
 
 function App() {
   return (
-    <div className="App">
-      V
-    </div>
+    <Switch>
+      <Route exact={true} path='/'>Homepage</Route>
+      <Route exact path='/vivek'>Vivek</Route>
+      <Route>404: Page Not Found</Route> {/* Default operation */}
+    </Switch>
   );
 }
 
